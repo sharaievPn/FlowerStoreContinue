@@ -9,12 +9,12 @@ import org.springframework.web.bind.annotation.RestController;
 public class DeliverController {
 
     @GetMapping("/dhl")
-    String getDHL(){
+    String getDHL() {
         return "DHL delivery method.";
     }
 
     @GetMapping("/post")
-    String getPost(){
+    String getPost() {
         return "Post delivery method.";
     }
 }

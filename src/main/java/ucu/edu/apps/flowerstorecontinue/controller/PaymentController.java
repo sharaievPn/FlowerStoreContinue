@@ -9,12 +9,12 @@ import org.springframework.web.bind.annotation.RestController;
 public class PaymentController {
 
     @GetMapping("/paypal")
-    String getPayPal(){
+    String getPayPal() {
         return "PayPal";
     }
 
     @GetMapping("/credit_card")
-    String getCreditCard(){
+    String getCreditCard() {
         return "Credit Card";
     }
 }

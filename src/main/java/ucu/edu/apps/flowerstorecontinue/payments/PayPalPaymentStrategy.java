@@ -1,10 +1,9 @@
 package ucu.edu.apps.flowerstorecontinue.payments;
 
-public class PayPalPaymentStrategy implements Payment{
-    private String paymentMethodDescription;
-    public PayPalPaymentStrategy(){
-        paymentMethodDescription = "PayPal";
-    }
+import lombok.NoArgsConstructor;
+
+@NoArgsConstructor
+public class PayPalPaymentStrategy implements Payment {
     @Override
     public boolean pay(double price) {
         if (price > 0) {

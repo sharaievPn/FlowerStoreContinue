@@ -13,8 +13,10 @@ import ucu.edu.apps.flowerstorecontinue.FlowerColor;
 public class FlowerController {
 
     @GetMapping("/list")
-    public List<Flower> getFlower(){
-        Flower flower = new Flower(11, 11, FlowerColor.RED);
+    public List<Flower> getFlower() {
+        double sepalLength = 11.5;
+        double price = 11.5;
+        Flower flower = new Flower(sepalLength, price, FlowerColor.RED);
         return List.of(flower);
     }
 }

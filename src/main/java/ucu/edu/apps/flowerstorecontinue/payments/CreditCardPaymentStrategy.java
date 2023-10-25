@@ -1,15 +1,14 @@
 package ucu.edu.apps.flowerstorecontinue.payments;
 
-public class CreditCardPaymentStrategy implements Payment {
-    private String paymentMethodDescription;
+import lombok.NoArgsConstructor;
 
-    public CreditCardPaymentStrategy(){
-        paymentMethodDescription = "Credit Card";
-    }
+@NoArgsConstructor
+public class CreditCardPaymentStrategy implements Payment {
     @Override
     public boolean pay(double price) {
-        if (price > 0){
-            System.out.printf("The price of %s is paid using Credit Card.%n", price);
+        if (price > 0) {
+            System.out.printf("The price of %s is paid " +
+                    "using Credit Card.%n", price);
             return true;
         }
         System.out.println("Purchase is not fulfilled");

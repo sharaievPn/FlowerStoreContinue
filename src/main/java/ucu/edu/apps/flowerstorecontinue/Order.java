@@ -9,7 +9,7 @@ public class Order {
     private LinkedList<Item> items;
     private Payment payment;
     private Delivery delivery;
-    public Order(){
+    public Order() {
         items = new LinkedList<>();
     }
 
@@ -29,7 +29,7 @@ public class Order {
         items.remove(itemToRemove);
     }
 
-    void processOrder(){
+    void processOrder() {
         payment.pay(calculateTotalPrice());
         delivery.deliver();
     }

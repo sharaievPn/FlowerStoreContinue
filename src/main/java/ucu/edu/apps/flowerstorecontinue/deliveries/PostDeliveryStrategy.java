@@ -5,7 +5,7 @@ import lombok.Getter;
 public class PostDeliveryStrategy implements Delivery {
     @Getter
     private String description;
-    public PostDeliveryStrategy(){
+    public PostDeliveryStrategy() {
         description = "Post delivery service";
     }
     @Override
