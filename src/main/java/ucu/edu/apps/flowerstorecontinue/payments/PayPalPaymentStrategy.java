@@ -1,7 +1,10 @@
-package ucu.edu.apps.flowerstoreContinue.Payments;
+package ucu.edu.apps.flowerstorecontinue.payments;
 
 public class PayPalPaymentStrategy implements Payment{
     private String paymentMethodDescription;
+    public PayPalPaymentStrategy(){
+        paymentMethodDescription = "PayPal";
+    }
     @Override
     public boolean pay(double price) {
         if (price > 0) {
@@ -10,8 +13,5 @@ public class PayPalPaymentStrategy implements Payment{
         }
         System.out.println("Purchase is not fulfilled");
         return false;
-    }
-    public PayPalPaymentStrategy(){
-        paymentMethodDescription = "PayPal";
     }
 }

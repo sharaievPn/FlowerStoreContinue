@@ -1,4 +1,4 @@
-package ucu.edu.apps.flowerstoreContinue;
+package ucu.edu.apps.flowerstorecontinue;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

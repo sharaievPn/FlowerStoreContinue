@@ -1,4 +1,4 @@
-package ucu.edu.apps.flowerstoreContinue.Deliveries;
+package ucu.edu.apps.flowerstorecontinue.deliveries;
 
 public interface Delivery {
     boolean deliver();

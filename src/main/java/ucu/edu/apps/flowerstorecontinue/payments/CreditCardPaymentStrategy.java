@@ -1,8 +1,11 @@
-package ucu.edu.apps.flowerstoreContinue.Payments;
+package ucu.edu.apps.flowerstorecontinue.payments;
 
 public class CreditCardPaymentStrategy implements Payment {
     private String paymentMethodDescription;
 
+    public CreditCardPaymentStrategy(){
+        paymentMethodDescription = "Credit Card";
+    }
     @Override
     public boolean pay(double price) {
         if (price > 0){
@@ -11,8 +14,5 @@ public class CreditCardPaymentStrategy implements Payment {
         }
         System.out.println("Purchase is not fulfilled");
         return false;
-    }
-    public CreditCardPaymentStrategy(){
-        paymentMethodDescription = "Credit Card";
     }
 }

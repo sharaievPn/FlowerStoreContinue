@@ -1,10 +1,10 @@
-package ucu.edu.apps.flowerstoreContinue;
+package ucu.edu.apps.flowerstorecontinue;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import ucu.edu.apps.flowerstoreContinue.Deliveries.DHLDeliveryStrategy;
-import ucu.edu.apps.flowerstoreContinue.Deliveries.Delivery;
-import ucu.edu.apps.flowerstoreContinue.Deliveries.PostDeliveryStrategy;
+import ucu.edu.apps.flowerstorecontinue.deliveries.DHLDeliveryStrategy;
+import ucu.edu.apps.flowerstorecontinue.deliveries.Delivery;
+import ucu.edu.apps.flowerstorecontinue.deliveries.PostDeliveryStrategy;
 
 
 public class DeliveryTests {

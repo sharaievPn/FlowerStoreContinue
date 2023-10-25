@@ -1,7 +1,7 @@
-package ucu.edu.apps.flowerstoreContinue;
+package ucu.edu.apps.flowerstorecontinue;
 
-import ucu.edu.apps.flowerstoreContinue.Deliveries.Delivery;
-import ucu.edu.apps.flowerstoreContinue.Payments.Payment;
+import ucu.edu.apps.flowerstorecontinue.deliveries.Delivery;
+import ucu.edu.apps.flowerstorecontinue.payments.Payment;
 
 import java.util.LinkedList;
 
@@ -17,7 +17,7 @@ public class Order {
         items.add(newItem);
     }
 
-    double calculateTotalPrice(){
+    double calculateTotalPrice() {
         double price = 0;
         for (Item currentItem: items) {
             price += currentItem.getPrice();
