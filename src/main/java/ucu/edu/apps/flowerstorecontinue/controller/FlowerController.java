@@ -14,9 +14,9 @@ public class FlowerController {
 
     @GetMapping("/list")
     public List<Flower> getFlower() {
-        double SEPALLENGTH = 11.5;
-        double PRICE = 11.5;
-        Flower flower = new Flower(SEPALLENGTH, PRICE, FlowerColor.RED);
+        double sepalLength = 11.5;
+        double price = 11.5;
+        Flower flower = new Flower(sepalLength, price, FlowerColor.RED);
         return List.of(flower);
     }
 }

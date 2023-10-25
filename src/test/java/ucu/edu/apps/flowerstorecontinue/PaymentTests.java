@@ -9,8 +9,8 @@ import ucu.edu.apps.flowerstorecontinue.payments.Payment;
 public class PaymentTests {
     private Payment creditCardPay;
     private Payment payPal;
-    private double PRICE;
-    private double ZEROPRICE;
+    private double price;
+    private double zeroPrice;
 
 
 
@@ -18,32 +18,32 @@ public class PaymentTests {
     public void init() {
         creditCardPay = new CreditCardPaymentStrategy();
         payPal = new PayPalPaymentStrategy();
-        PRICE = 100.0;
-        ZEROPRICE = 0;
+        price = 100.0;
+        zeroPrice = 0.0;
     }
 
 
     @Test
     public void testCreditCardPaymentNonZero() {
-        boolean paidByCard = creditCardPay.pay(PRICE);
+        boolean paidByCard = creditCardPay.pay(price);
         assert (paidByCard);
     }
 
     @Test
     public void testPayPalPaymentNonZero() {
-        boolean paidByPayPal = payPal.pay(PRICE);
+        boolean paidByPayPal = payPal.pay(price);
         assert (paidByPayPal);
     }
 
     @Test
     public void testPayPalPaymentZero() {
-        boolean paidByPayPal = payPal.pay(ZEROPRICE);
+        boolean paidByPayPal = payPal.pay(zeroPrice);
         assert (!paidByPayPal);
     }
 
     @Test
     public void testCreditCardPaymentZero() {
-        boolean paidByCard = creditCardPay.pay(ZEROPRICE);
+        boolean paidByCard = creditCardPay.pay(zeroPrice);
         assert (!paidByCard);
     }
 }
